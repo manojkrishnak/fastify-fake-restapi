@@ -1,4 +1,5 @@
 const fastify = require("fastify")({logger: true});
+const PORT = process.env.PORT || 3001;
 
 fastify.register(require("fastify-swagger"), {
     exposeRoute: true, 
@@ -15,7 +16,7 @@ fastify.register(require("./routes/index"));
 
 
 
-fastify.listen((process.env.PORT || 3001), function (err, address){
+fastify.listen(PORT, function (err, address){
     if(err){
         fastify.log.error(err);
         process.exit(1);
