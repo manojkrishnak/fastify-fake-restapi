@@ -133,7 +133,9 @@ const updateUserOptns = {
 
 function usersRoutes(fastify, options, done) {
 
-    fastify.get('/', homeController)
+    fastify.get('/', function (req, reply) {
+        reply.send("Welcome to Fake REST API with Fastify :)");
+    })
 
     fastify.get('/users', getAllUsersOptns)
 
