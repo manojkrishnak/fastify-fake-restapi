@@ -15,7 +15,7 @@ fastify.register(require("./routes/index"));
 
 
 
-fastify.listen(3001, function (err, address){
+fastify.listen((process.env.PORT || 3001), function (err, address){
     if(err){
         fastify.log.error(err);
         process.exit(1);
