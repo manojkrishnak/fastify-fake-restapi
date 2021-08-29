@@ -24,14 +24,15 @@ function getUserDetailsController(req, reply) {
 
 function createUserController(req, reply) {
   const body = req.body;
-  body.id = users.length + 1;
+  const ln = users.length;
+  body.id = users[ln - 1].id + 1;
   users = [...users, body];
   reply.code(201).send(users);
 }
 
 function deleteUserController(req, reply) {
   const { username } = req.params;
-  const user = users.filter((user) => user.username !== username);
+  users = users.filter((user) => user.username !== username);
   reply.send({ message: `User: ${username} has been deleted` });
 }
 
