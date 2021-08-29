@@ -6,4 +6,12 @@ Fastify provides high performance and Schema based validation to routes and outp
 
 This API offers `GET`, `POST`, `PUT`, `DELETE` methods on Users dataset.
 
-Usage is pretty simple and straightforward by just typing out the URL.
+Usage is pretty simple and straightforward by just typing out the URL or [click here](https://fastify-fake-restapi.herokuapp.com/).
+
+##Routes
+
+`GET` all users - `/users`
+`GET` specific user - `/users/{id}`
+`POST` add user - `/user`
+`DELETE` delete user - `/users/{username}`
+`PUT` update user - `/users/{username}`
