@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "faker": "^5.5.3",
     "fastify": "^3.20.1",
     "fastify-swagger": "^4.8.4"
   },

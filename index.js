@@ -8,12 +8,11 @@ fastify.register(require("fastify-swagger"), {
         info: {
             title: "Fake REST API", 
             description: "A Fake REST API built with Fastify",
-            version: "0.1.0"
+            version: "1.0.0"
     }
     }
 });
 fastify.register(require("./routes/index"));
-
 
 
 fastify.listen(PORT,"0.0.0.0", function (err, address){

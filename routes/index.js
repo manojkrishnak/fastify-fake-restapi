@@ -1,4 +1,4 @@
-const { homeController,
+const {
     getAllUsersController,
     getUserDetailsController,
     createUserController,
@@ -16,7 +16,7 @@ const userProps = {
             type: "object",
             properties: {
                 street: { type: "string" },
-                suit: { type: "string" },
+                suite: { type: "string" },
                 city: { type: "string" },
                 pincode: { type: "string" },
                 geo: {
@@ -128,7 +128,6 @@ const updateUserOptns = {
     },
     handler: updateUserController
 };
-
 
 
 function usersRoutes(fastify, options, done) {
