@@ -8,10 +8,10 @@ This API offers `GET`, `POST`, `PUT`, `DELETE` methods on Users dataset.
 
 Usage is pretty simple and straightforward by just typing out the URL or [click here](https://fastify-fake-restapi.herokuapp.com/).
 
-##Routes
+##### Routes
 
-`GET` all users - `/users`
-`GET` specific user - `/users/{id}`
-`POST` add user - `/user`
-`DELETE` delete user - `/users/{username}`
-`PUT` update user - `/users/{username}`
+`GET` all users - `/users`  
+`GET` specific user - `/users/{id}`  
+`POST` add user - `/user`  
+`DELETE` delete user - `/users/{username}`  
+`PUT` update user - `/users/{username}`  
