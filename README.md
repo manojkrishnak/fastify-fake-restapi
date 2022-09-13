@@ -9,7 +9,7 @@ This API offers `GET`, `POST`, `PUT`, `DELETE` methods on Users dataset.
 Usage is pretty simple and straightforward by just typing out the URL or [click here](https://fastify-fake-restapi.herokuapp.com/).
 
 ##### Routes
-To get Swagger docs - `/docs`
+To get Swagger docs - `/docs`   
 `GET` all users - `/users`  
 `GET` specific user - `/users/{id}`  
 `POST` add user - `/user`  
